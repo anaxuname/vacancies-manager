@@ -3,6 +3,7 @@ from src.vacancies_api_manager import APIManager
 
 
 def fill_db():
+    """Функция по сбору данных о вакансиях"""
     api = APIManager()
     vacs = api.get_vacancies()
     dbm = DBManager()
@@ -31,7 +32,8 @@ def fill_db():
 
 
 def main():
-    # fill_db()
+    """Основное поведение программы"""
+    fill_db()
     dbm = DBManager()
     for company in dbm.get_companies_and_vacancies_count():
         print(*company)

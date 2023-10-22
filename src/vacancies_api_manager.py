@@ -4,6 +4,7 @@ from src import settings
 
 
 class APIManager:
+    """Класс по роботе с API с сайта hh.ru"""
 
     def get_vacancies(self):
         r = self.load_vacancies()
