@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vacancies-manager"
+version = "0.1.0"
+description = ""
+authors = ["Anaxuname <anaxuname@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vacancies_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "2.31.0"
+psycopg2 = "^2.9.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
